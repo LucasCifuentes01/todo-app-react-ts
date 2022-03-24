@@ -1,12 +1,17 @@
-import './App.css'
-
+import { LayoutContainer } from "./styled-components/Layout";
+import { H1 } from "./styled-components/fonts";
+import TaskContainer from "./components/TaskContainer";
+import Form from "./components/Form";
 function App() {
-
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <LayoutContainer>
+        <H1>ToDo App</H1>
+        <Form />
+        <TaskContainer />
+      </LayoutContainer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
